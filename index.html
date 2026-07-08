@@ -1,148 +1,148 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZhenZhouDu | Personal Homepage</title>
+    <title>枕舟渡 | 学术主页</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="loading">
-        <div class="loading-content">
-            <h1>枕舟渡</h1>
-            <h2>ZhenZhouDu</h2>
-        </div>
-    </div>
-
-    <div class="app-shell">
+    <div class="page-shell">
         <aside class="sidebar">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="logo" />
+            <div class="sidebar-brand">
+                <div class="brand-mark">枕舟渡</div>
+                <div class="brand-label">学术与诗意并行</div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home" class="active"><i class="fa-solid fa-house"></i><span data-i18n="home">首页</span></a></li>
-                    <li><a href="#about"><i class="fa-solid fa-user"></i><span data-i18n="about">关于我</span></a></li>
-                    <li><a href="#academics"><i class="fa-solid fa-graduation-cap"></i><span data-i18n="academic">学术经历</span></a></li>
-                    <li><a href="#interests"><i class="fa-solid fa-book-open"></i><span data-i18n="interest">兴趣爱好</span></a></li>
-                    <li><a href="#contact"><i class="fa-solid fa-feather-pointed"></i><span data-i18n="contact">联系方式</span></a></li>
-                </ul>
+            <nav class="sidebar-nav">
+                <a href="#home" class="nav-item active"><i class="fa-solid fa-house"></i><span>首页</span></a>
+                <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i><span>关于我</span></a>
+                <a href="#academics" class="nav-item"><i class="fa-solid fa-graduation-cap"></i><span>学术经历</span></a>
+                <a href="#interests" class="nav-item"><i class="fa-solid fa-book-open"></i><span>兴趣爱好</span></a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-feather-pointed"></i><span>联系方式</span></a>
             </nav>
-            <div class="sidebar-footer">
-                <button id="darkmodeBtn" class="control-btn"><i class="fa-solid fa-moon"></i> <span data-i18n="darkmode">夜间模式</span></button>
-            </div>
+            
         </aside>
 
         <main>
-            <section id="home" class="hero section">
-                <div class="container hero-panel">
-                    <div class="hero-copy fade-up">
-                        <span class="eyebrow" data-i18n="eyebrow">学术主页</span>
-                        <h1 data-i18n="heroTitle">枕舟渡</h1>
-                        <p data-i18n="heroSubtitle">欢迎我的新朋友，我是枕舟渡，欢迎来到我的学术主页。</p>
-                        <div class="hero-meta">
-                            <div class="hero-tag"><i class="fa-solid fa-envelope"></i>zy20250823@gmail.com</div>
-                            <div class="hero-tag"><i class="fa-solid fa-building-columns"></i><span data-i18n="school">中国人民大学</span></div>
+            <section id="home" class="hero-section">
+                <div class="hero-panel">
+                    <div class="hero-copy">
+                        <span class="hero-label">个人主页</span>
+                        <h1>枕舟渡</h1>
+                        <p>欢迎你，我的新朋友！</p>
+                        <div class="hero-info">
+                            <div class="info-card"><i class="fa-solid fa-envelope"></i><span>zy20250823@gmail.com</span></div>
+                            <div class="info-card"><i class="fa-solid fa-building-columns"></i><span>中国人民大学</span></div>
                         </div>
-                        <div class="hero-actions">
-                            <button id="languageBtn" class="control-btn">English</button>
-                        </div>
+                        <a class="hero-button" href="#contact">欢迎交流</a>
                     </div>
-                    <div class="hero-visual fade-up">
-                        <img src="assets/images/moon.png" class="moon" alt="moon" />
-                        <img src="assets/images/mountain.png" class="mountain" alt="mountains" />
-                        <img src="assets/images/boat.png" class="boat" alt="boat" />
-                        <img src="assets/images/bamboo.png" class="bamboo" alt="bamboo" />
-                        <div class="seal"><img src="assets/images/seal.png" alt="seal" /></div>
-                        <div class="hero-poem">
-                            <span>不待春风慢</span>
-                            <span>我以明月宴群山</span>
-                        </div>
+                    <div class="hero-visual">
+                        <div class="hero-moon"></div>
+                        <div class="hero-ink"></div>
+                        <div class="hero-poem"><span>不待春风慢</span><span>我以明月宴群山</span></div>
                     </div>
                 </div>
             </section>
 
-            <section id="about" class="section">
-                <div class="container">
-                    <div class="section-title">
-                        <h2 data-i18n="about">关于我</h2>
-                        <span data-i18n="aboutLabel">About Me</span>
+            <section id="about" class="about-section">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">关于我</div>
+                        <div class="section-subtitle">About Me</div>
                     </div>
-                    <div class="about-container">
-                        <div class="about-text fade-up">
-                            <p><strong data-i18n="school">现就读于中国人民大学</strong></p>
-                            <p><strong data-i18n="profile">一名化学、AI、环境领域爱好者</strong></p>
-                            <p data-i18n="description">热爱科研，关注人工智能与化学、环境科学的交叉融合，希望借助计算方法探索科学问题，不断拓展知识的边界。</p>
-                        </div>
-                        <div class="about-image fade-up">
-                            <img src="assets/images/about.png" alt="about illustration" />
-                            <div class="floating-icon molecule"><i class="fa-solid fa-atom"></i></div>
-                            <div class="floating-icon ai"><i class="fa-solid fa-microchip"></i></div>
-                            <div class="floating-icon flask"><i class="fa-solid fa-flask"></i></div>
-                            <div class="floating-icon leaf"><i class="fa-solid fa-leaf"></i></div>
-                            <div class="floating-icon pen"><i class="fa-solid fa-feather"></i></div>
-                        </div>
+                </div>
+                <div class="about-panel">
+                    <div class="about-text">
+                        <p>我目前就读于中国人民大学，关注化学、人工智能与环境科学交叉领域。</p>
+                        <p>热爱探索学术问题，也珍视传统文化中的诗意与沉静。</p>
+                        <p>希望在未来的研究中，将理性与美学融合，创造扎实而有温度的成果。</p>
                     </div>
+                    <div class="about-image"></div>
                 </div>
             </section>
 
-            <section id="academics" class="section">
-                <div class="container">
-                    <div class="section-title">
-                        <h2 data-i18n="academic">学术经历</h2>
-                        <span data-i18n="academicLabel">Academic Experience</span>
+            <section id="academics" class="cards-section">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">学术经历</div>
+                        <div class="section-subtitle">Academic Experience</div>
                     </div>
-                    <div class="academics-grid">
-                        <article class="academic-card fade-up"><div class="year">2026</div><h3>Coming Soon</h3><p class="description">基于时间轴的学术节点，将来可扩展论文、项目、竞赛等内容。</p></article>
-                        <article class="academic-card fade-up"><div class="year">2027</div><h3>学术规划</h3><p class="description">后续可在此添加研究成果、合作和发表记录。</p></article>
-                    </div>
+                </div>
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-flask"></i></div>
+                        <h3>研究方向</h3>
+                        <p>化学与材料科学、智能建模、环境监测数据分析。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-book"></i></div>
+                        <h3>项目经历</h3>
+                        <p>参与课程科研、学术竞赛和跨学科协作，积累实践与分析能力。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-atom"></i></div>
+                        <h3>学术目标</h3>
+                        <p>深化专业基础，并在计算科学与实验研究之间建立新链接。</p>
+                    </article>
                 </div>
             </section>
 
-            <section id="interests" class="section">
-                <div class="container">
-                    <div class="section-title">
-                        <h2 data-i18n="interest">兴趣爱好</h2>
-                        <span data-i18n="interestLabel">Interests</span>
+            <section id="interests" class="cards-section interests-section">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">兴趣爱好</div>
+                        <div class="section-subtitle">Interests</div>
                     </div>
-                    <div class="interest-grid">
-                        <article class="interest-card fade-up"><h3>科研探索</h3><p>探索 AI 与化学、环境科学的交叉应用。</p></article>
-                        <article class="interest-card fade-up"><h3>阅读写作</h3><p>记录学术笔记，整理科研思路。</p></article>
-                    </div>
+                </div>
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-swatchbook"></i></div>
+                        <h3>古风诗词</h3>
+                        <p>以文字与意境表达内心，对古典文化保持长久兴趣。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>编程与建模</h3>
+                        <p>喜欢用代码和模型解决问题，探索技术驱动科研的可能。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>自然与环境</h3>
+                        <p>关注环境科学与可持续发展，希望参与相关研究与实践。</p>
+                    </article>
                 </div>
             </section>
 
-            <section id="contact" class="section">
-                <div class="container">
-                    <div class="section-title">
-                        <h2 data-i18n="contact">联系方式</h2>
-                        <span data-i18n="contactLabel">Contact</span>
-                    </div>
-                    <div class="contact-grid">
-                        <article class="contact-card fade-up"><h4>📞 Phone</h4><p>暂无公开手机号</p></article>
-                        <article class="contact-card fade-up"><h4>✉ Email</h4><p>zy20250823@gmail.com</p></article>
-                        <article class="contact-card fade-up"><h4>🎓 University</h4><p data-i18n="school">中国人民大学</p></article>
-                        <article class="contact-card fade-up"><h4>🌐 GitHub</h4><a href="https://github.com/Zhenzhoudu" target="_blank">github.com/Zhenzhoudu</a></article>
+            <section id="contact" class="contact-section">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">联系方式</div>
+                        <div class="section-subtitle">Contact</div>
                     </div>
                 </div>
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <h4>邮箱</h4>
+                        <p>zy20250823@gmail.com</p>
+                    </article>
+                    <article class="contact-card">
+                        <h4>学校</h4>
+                        <p>中国人民大学</p>
+                    </article>
+                    <article class="contact-card">
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/Zhenzhoudu" target="_blank">github.com/Zhenzhoudu</a></p>
+                    </article>
+                    <article class="contact-card">
+                        <h4>愿景</h4>
+                        <p>愿与志同道合者共探学术真理，共绘未来可能。</p>
+                    </article>
+                </div>
             </section>
-
-            <footer class="site-footer container">
-                <p>© 2026 ZhenZhouDu. Personal Academic Portfolio.</p>
-            </footer>
         </main>
     </div>
-
-    <button id="topBtn" class="top-btn" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <script src="js/language.js" defer></script>
-    <script src="js/scroll.js" defer></script>
-    <script src="js/animation.js" defer></script>
-    <script src="js/darkmode.js" defer></script>
-    <script src="js/main.js" defer></script>
 </body>
 </html>

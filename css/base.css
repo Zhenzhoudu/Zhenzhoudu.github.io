@@ -1,17 +1,17 @@
-:root {
-    --main-bg: #f4ede2;
-    --surface: rgba(255, 250, 242, 0.96);
-    --surface-soft: rgba(255, 251, 245, 0.98);
-    --text: #3f3322;
-    --text-muted: #7f6a53;
-    --accent: #8d7046;
-    --accent-strong: #b9822d;
-    --border: rgba(125, 95, 57, 0.18);
-    --shadow: 0 24px 60px rgba(93, 70, 44, 0.14);
+﻿:root {
+    --main-bg: #f3ead9;
+    --panel-bg: rgba(255, 251, 244, 0.96);
+    --surface: #fff8ef;
+    --text: #3d2b1a;
+    --text-muted: #7f6c56;
+    --accent: #8f6842;
+    --accent-soft: #d6b48a;
+    --border: rgba(124, 86, 50, 0.16);
+    --shadow: 0 18px 45px rgba(108, 79, 55, 0.14);
     --font-en: "Times New Roman", serif;
     --font-cn: "KaiTi", "楷体", "Microsoft YaHei", "PingFang SC", sans-serif;
-    --radius: 24px;
-    --transition: 260ms ease;
+    --radius: 28px;
+    --transition: 240ms ease;
 }
 
 * {
@@ -20,7 +20,9 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    /* doubled base font-size so most typography scales up */
+    /* reduced by one step from 32px -> 28px */
+    font-size: 28px;
     background: var(--main-bg);
 }
 
@@ -30,19 +32,8 @@ body {
     font-family: var(--font-en), var(--font-cn);
     background: var(--main-bg);
     color: var(--text);
-    line-height: 1.75;
+    line-height: 1.7;
     overflow-x: hidden;
-}
-
-#loading {
-    position: fixed;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    background: var(--main-bg);
-    z-index: 9999;
-    color: var(--text);
-    transition: opacity 0.35s ease;
 }
 
 img {
@@ -77,11 +68,6 @@ section {
     padding: 80px 0;
 }
 
-.container {
-    width: min(1120px, calc(100% - 40px));
-    margin: 0 auto;
-}
-
 ::selection {
-    background: rgba(130, 192, 255, 0.35);
+    background: rgba(142, 103, 46, 0.2);
 }
