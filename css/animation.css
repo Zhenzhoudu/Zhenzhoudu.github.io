@@ -1,0 +1,49 @@
+.fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-visual .moon {
+    animation: pulse 8s ease-in-out infinite;
+}
+
+.hero-visual .boat {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-visual .bamboo {
+    animation: drift 10s ease-in-out infinite;
+}
+
+.floating-icon {
+    animation: float 5s ease-in-out infinite;
+}
+
+.sidebar nav a:hover,
+.control-btn:hover,
+.academic-card:hover,
+.interest-card:hover,
+.contact-card:hover {
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-16px); }
+}
+
+@keyframes drift {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(12px); }
+}

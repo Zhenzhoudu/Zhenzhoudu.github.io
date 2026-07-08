@@ -1,0 +1,44 @@
+:root {
+    color-scheme: dark;
+}
+
+body.light-mode {
+    --main-bg: #f7f8ff;
+    --surface: rgba(255, 255, 255, 0.96);
+    --surface-soft: rgba(242, 244, 255, 0.92);
+    --text: #111827;
+    --text-muted: #475569;
+    --accent: #2463ff;
+    --accent-strong: #f59e0b;
+    --border: rgba(15, 23, 42, 0.12);
+    background: #f7f8ff;
+}
+
+body.dark-mode {
+    --main-bg: #060811;
+    --surface: rgba(8, 12, 29, 0.96);
+    --surface-soft: rgba(18, 25, 50, 0.92);
+    --text: #edf2ff;
+    --text-muted: #9fb1d9;
+    --accent: #82c0ff;
+    --accent-strong: #ffd97a;
+    --border: rgba(255, 255, 255, 0.08);
+    background: #060811;
+}
+
+body.light-mode .sidebar {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+body.light-mode .control-btn,
+body.light-mode .top-btn,
+body.light-mode .academic-card,
+body.light-mode .interest-card,
+body.light-mode .contact-card {
+    background: rgba(255, 255, 255, 0.92);
+}
+
+body.light-mode .sidebar nav a:hover,
+body.light-mode .control-btn:hover {
+    background: rgba(36, 99, 255, 0.12);
+}

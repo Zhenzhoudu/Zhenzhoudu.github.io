@@ -1,0 +1,74 @@
+.control-btn {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    transition: transform var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(130, 192, 255, 0.14);
+    border-color: rgba(130, 192, 255, 0.22);
+}
+
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent-strong);
+    font-size: 0.95rem;
+}
+
+.card-label i {
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+}
+
+.card-hero {
+    margin-top: 20px;
+    display: grid;
+    gap: 8px;
+}
+
+.card-hero p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.icon-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.icon-badge svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent);
+}
+
+.contact-card a {
+    word-break: break-word;
+}
