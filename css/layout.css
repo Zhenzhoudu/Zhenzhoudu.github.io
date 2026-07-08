@@ -1,50 +1,57 @@
 .app-shell {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 260px 1fr;
     min-height: 100vh;
+    background: var(--main-bg);
 }
 
 .sidebar {
     position: fixed;
     inset: 0 auto 0 0;
-    width: 280px;
-    padding: 32px 24px;
-    background: rgba(6, 11, 22, 0.98);
-    border-right: 1px solid var(--border);
+    width: 260px;
+    padding: 40px 24px;
+    background: rgba(245, 232, 213, 0.96);
+    border-right: 1px solid rgba(125, 95, 57, 0.18);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 6px 0 24px rgba(93, 70, 44, 0.12);
     z-index: 10;
 }
 
 .logo img {
-    width: 52px;
+    width: 70px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .sidebar nav {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .sidebar nav ul {
     display: grid;
-    gap: 14px;
+    gap: 18px;
 }
 
 .sidebar nav a {
     display: flex;
     align-items: center;
     gap: 14px;
-    color: var(--text-muted);
-    padding: 14px 18px;
-    border-radius: 18px;
-    transition: background var(--transition), color var(--transition);
+    color: var(--text);
+    padding: 16px 18px;
+    border-radius: 20px;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+    background: rgba(255, 255, 248, 0.9);
+    border: 1px solid rgba(125, 95, 57, 0.12);
 }
 
 .sidebar nav a.active,
 .sidebar nav a:hover {
-    background: rgba(130, 192, 255, 0.12);
-    color: var(--text);
+    background: rgba(214, 183, 137, 0.18);
+    color: var(--accent-strong);
+    transform: translateX(4px);
 }
 
 .sidebar nav a i {
@@ -55,29 +62,31 @@
 .sidebar-footer {
     display: grid;
     gap: 12px;
-    margin-top: 24px;
+    margin-top: 34px;
 }
 
 main {
-    margin-left: 280px;
-    padding: 32px 40px 60px;
+    margin-left: 260px;
+    padding: 40px 50px 60px;
 }
 
 .hero {
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 80px);
     display: grid;
     align-items: center;
+    background: radial-gradient(circle at top right, rgba(255, 254, 248, 0.95), rgba(244, 237, 226, 0.95) 45%, transparent 75%);
 }
 
 .hero-panel {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.35fr 1fr;
     gap: 48px;
     align-items: center;
 }
 
 .hero-copy {
     max-width: 560px;
+    padding: 40px 0;
 }
 
 .hero-copy .eyebrow {
@@ -86,44 +95,63 @@ main {
     gap: 10px;
     padding: 10px 18px;
     border-radius: 999px;
-    background: rgba(255, 217, 122, 0.12);
+    background: rgba(178, 118, 45, 0.1);
     color: var(--accent-strong);
     font-size: 0.95rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
+    font-family: var(--font-en);
 }
 
 .hero-copy h1 {
-    font-size: clamp(3rem, 4.5vw, 5rem);
-    margin: 24px 0 16px;
-    letter-spacing: -0.04em;
+    font-size: clamp(3.4rem, 5vw, 5.4rem);
+    margin: 24px 0 18px;
+    letter-spacing: 0.03em;
+    font-family: var(--font-cn);
+    color: #362a1d;
+    line-height: 0.95;
 }
 
 .hero-copy p {
     max-width: 520px;
     color: var(--text-muted);
-    margin-bottom: 28px;
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    font-family: var(--font-en);
 }
 
 .hero-meta {
     display: grid;
     gap: 14px;
+    margin-bottom: 24px;
 }
 
 .hero-tag {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    padding: 16px 20px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 248, 0.92);
+    border: 1px solid rgba(125, 95, 57, 0.12);
     color: var(--text);
+    font-family: var(--font-en);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 18px;
 }
 
 .hero-visual {
     position: relative;
-    min-height: 420px;
+    min-height: 520px;
+    border-radius: 44px;
+    background: rgba(255, 250, 242, 0.95);
+    border: 1px solid rgba(125, 95, 57, 0.16);
+    box-shadow: var(--shadow);
+    overflow: hidden;
 }
 
 .hero-visual img {
@@ -132,35 +160,59 @@ main {
     max-width: 100%;
 }
 
+.hero-poem {
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 247, 0.95);
+    border: 1px solid rgba(125, 95, 57, 0.14);
+    writing-mode: vertical-rl;
+    text-align: center;
+    color: #4f3c25;
+    font-family: var(--font-cn);
+}
+
+.hero-poem span {
+    display: block;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
 .hero-visual .moon {
-    width: 140px;
-    top: 16px;
-    right: 32px;
+    width: 160px;
+    top: 26px;
+    right: 36px;
 }
 
 .hero-visual .mountain {
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    width: 120%;
+    bottom: -8px;
+    left: -10px;
 }
 
 .hero-visual .boat {
-    width: 180px;
-    bottom: 42px;
-    left: 20px;
+    width: 220px;
+    bottom: 36px;
+    left: 30px;
 }
 
 .hero-visual .bamboo {
-    width: 90px;
-    bottom: 120px;
-    right: 22px;
+    width: 115px;
+    bottom: 150px;
+    right: 32px;
 }
 
 .hero-visual .seal {
     position: absolute;
-    width: 96px;
-    bottom: 150px;
-    left: 36px;
+    width: 98px;
+    bottom: 170px;
+    left: 34px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -171,22 +223,24 @@ main {
 
 .section-title {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: baseline;
     gap: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
 }
 
 .section-title h2 {
     margin: 0;
     font-size: 2.4rem;
+    color: #3b2f1f;
+    font-family: var(--font-cn);
 }
 
 .section-title span {
-    color: var(--accent);
-    font-size: 1rem;
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    letter-spacing: 0.24em;
+    font-family: var(--font-en);
 }
 
 .about-container,
@@ -205,20 +259,26 @@ main {
 .about-text p {
     margin: 0 0 18px;
     color: var(--text-muted);
+    font-family: var(--font-en);
 }
 
 .about-text strong {
     color: var(--text);
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--font-cn);
 }
 
 .about-image {
     position: relative;
-    max-width: 420px;
+    max-width: 460px;
 }
 
 .about-image img {
+    width: 100%;
     border-radius: 28px;
     box-shadow: var(--shadow);
+    border: 1px solid rgba(125, 95, 57, 0.12);
 }
 
 .floating-icon {

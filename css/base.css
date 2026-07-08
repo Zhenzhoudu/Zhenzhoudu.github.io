@@ -1,17 +1,17 @@
 :root {
-    --main-bg: #0b1227;
-    --surface: rgba(14, 23, 47, 0.95);
-    --surface-soft: rgba(20, 30, 60, 0.9);
-    --text: #f4f7ff;
-    --text-muted: #b8c2e0;
-    --accent: #82c0ff;
-    --accent-strong: #ffd97a;
-    --border: rgba(255, 255, 255, 0.08);
-    --shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
-    --font-en: "Cinzel", "Times New Roman", serif;
-    --font-cn: "Microsoft YaHei", "PingFang SC", sans-serif;
+    --main-bg: #f4ede2;
+    --surface: rgba(255, 250, 242, 0.96);
+    --surface-soft: rgba(255, 251, 245, 0.98);
+    --text: #3f3322;
+    --text-muted: #7f6a53;
+    --accent: #8d7046;
+    --accent-strong: #b9822d;
+    --border: rgba(125, 95, 57, 0.18);
+    --shadow: 0 24px 60px rgba(93, 70, 44, 0.14);
+    --font-en: "Times New Roman", serif;
+    --font-cn: "KaiTi", "楷体", "Microsoft YaHei", "PingFang SC", sans-serif;
     --radius: 24px;
-    --transition: 280ms ease;
+    --transition: 260ms ease;
 }
 
 * {
@@ -21,15 +21,16 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    background: var(--main-bg);
 }
 
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: var(--font-cn);
+    font-family: var(--font-en), var(--font-cn);
     background: var(--main-bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.75;
     overflow-x: hidden;
 }
 
