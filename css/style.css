@@ -321,7 +321,7 @@ button {
 .hero h1 {
     margin: 20px 0 8px;
     font-family: Georgia, "Songti SC", "STSong", serif;
-    font-size: clamp(3.4rem, 6.2vw, 6.2rem);
+    font-size: clamp(2.8rem, 5vw, 5rem);
     font-weight: 400;
     letter-spacing: 0.06em;
     line-height: 1.08;
@@ -861,7 +861,7 @@ button {
     }
 
     .hero h1 {
-        font-size: clamp(3.25rem, 17vw, 4.6rem);
+        font-size: clamp(2.75rem, 14vw, 3.8rem);
     }
 
     .hero-motto {
