@@ -29,6 +29,8 @@ fetch(gallery.dataset.gallerySource)
     works = gallery.dataset.galleryAlbum ? items.filter((work) => work.album === gallery.dataset.galleryAlbum) : items;
     empty.hidden = works.length > 0;
     let group = '';
+    let row;
+    let rowKey = '';
     works.forEach((work, index) => {
       if (work.group && work.group !== group) {
         group = work.group;
@@ -61,12 +63,29 @@ fetch(gallery.dataset.gallerySource)
         text.append(description);
       }
       figure.append(button, text);
-      gallery.append(figure);
+      if (gallery.classList.contains('photography')) {
+        const key = `${work.group}-${work.row}`;
+        if (key !== rowKey) {
+          row = document.createElement('div');
+          row.className = 'photo-row';
+          gallery.append(row);
+          rowKey = key;
+        }
+        figure.style.setProperty('--photo-ratio', work.width / work.height);
+        row.append(figure);
+      } else {
+        gallery.append(figure);
+      }
       button.addEventListener('click', () => {
         opener = button;
         showWork(index);
         viewer.showModal();
       });
+    });
+    gallery.querySelectorAll('.photo-row').forEach((row) => {
+      const photos = Array.from(row.querySelectorAll('img'));
+      row.style.setProperty('--row-ratio', photos.reduce((sum, photo) => sum + Number(photo.getAttribute('width')) / Number(photo.getAttribute('height')), 0));
+      row.style.setProperty('--row-gaps', `${(photos.length - 1) * 24}px`);
     });
   })
   .catch(() => { empty.hidden = false; });

@@ -116,9 +116,12 @@ body:has(dialog[open]) .pointer-flow { visibility: hidden; }
 .album-sections a { border-bottom: 1px solid var(--line); }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 28px; }
 .gallery-grid:not(:empty) { padding-top: 32px; padding-bottom: 25px; }
-.gallery-grid.photography { display: block; columns: 3 280px; column-gap: 28px; }
-.gallery-grid.photography .gallery-item { display: inline-block; width: 100%; margin-bottom: 28px; break-inside: avoid; }
-.album-subheading { column-span: all; font: 29px/1.6 var(--kai); margin: 0 0 26px; padding-top: 5px; scroll-margin-top: 30px; }
+.gallery-grid.photography { display: block; }
+.photo-row { display: flex; gap: 24px; width: min(100%, calc(var(--row-ratio) * 460px + var(--row-gaps))); margin: 0 auto 44px; align-items: start; }
+.gallery-grid.photography .gallery-item { flex: var(--photo-ratio) 1 0; margin: 0; }
+.gallery-grid.photography .gallery-item button { aspect-ratio: var(--photo-ratio); }
+.gallery-grid.photography .gallery-item img { height: 100%; }
+.album-subheading { font: 29px/1.6 var(--kai); margin: 0 0 30px; padding-top: 5px; scroll-margin-top: 30px; }
 .album-subheading:not(:first-child) { border-top: 1px solid var(--line); padding-top: 35px; }
 .gallery-grid.design { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery-item { margin: 0; min-width: 0; }
@@ -157,6 +160,21 @@ body:has(dialog[open]) .pointer-flow { visibility: hidden; }
 .research-project > p:not(.research-brand) { max-width: 900px; }
 .research-project .solid-link { margin-top: 12px; }
 .blog-journal { margin-bottom: 24px; }
+.journal-entry { display: grid; grid-template-columns: 100px minmax(0, 1fr) 50px; gap: 30px; align-items: start; padding: 40px 0 45px; border-bottom: 1px solid var(--line); }
+.journal-number, .journal-arrow { font: 28px/1.6 "Times New Roman", serif; color: var(--muted); }
+.journal-date { font: 18px/1.6 "Times New Roman", serif; color: var(--muted); }
+.journal-entry h2 { font: 34px/1.6 var(--kai); margin: 12px 0 15px; text-wrap: balance; }
+.journal-entry p { color: var(--muted); margin: 0; max-width: 720px; }
+.journal-entry:hover h2 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 8px; }
+.reading-wrap { width: min(780px, calc(100% - 96px)); margin-inline: auto; }
+.post-header { padding: 64px 0 37px; border-bottom: 1px solid var(--line); }
+.interior .post-title { font: 44px/1.65 var(--title); letter-spacing: 1px; margin: 0 0 23px; text-wrap: balance; }
+.post-title > span { display: inline-block; }
+.post-meta { display: flex; flex-wrap: wrap; gap: 12px 28px; color: var(--muted); font-size: 18px; }
+.post-body { padding: 28px 0 35px; font-size: 22px; line-height: 2.15; }
+.post-body p { margin: 0 0 1.4em; }
+.post-body p:last-child { font-family: var(--kai); font-size: 24px; margin-top: 1.7em; }
+.post-footer { border-top: 1px solid var(--line); padding: 28px 0 65px; }
 [hidden] { display: none !important; }
 @media (max-width: 1050px) {
   .wrap { width: calc(100% - 64px); }
@@ -224,8 +242,10 @@ body:has(dialog[open]) .pointer-flow { visibility: hidden; }
   .gallery-grid, .gallery-grid.design { grid-template-columns: 1fr; }
   .album-index { grid-template-columns: 1fr; gap: 35px; }
   .album-card h2 { font-size: 27px; }
-  .gallery-grid.photography { columns: 1; }
-  .gallery-grid.photography .gallery-item { margin-bottom: 30px; }
+  .photo-row { width: 100%; flex-direction: column; gap: 30px; margin-bottom: 30px; }
+  .gallery-grid.photography .gallery-item { flex: none; width: 100%; }
+  .gallery-grid.photography .gallery-item button { aspect-ratio: auto; }
+  .gallery-grid.photography .gallery-item img { height: auto; max-height: 620px; }
   .gallery-item img { height: auto; object-fit: contain; }
   .gallery-grid.design img { height: auto; }
   .single-work .gallery-item { display: block; }
@@ -240,6 +260,16 @@ body:has(dialog[open]) .pointer-flow { visibility: hidden; }
   .research-meta { font-size: 17px; }
   .research-brand { font-size: 34px; }
   .research-project h2 { font-size: 24px; }
+  .journal-entry { grid-template-columns: 35px minmax(0, 1fr); gap: 18px; padding-block: 30px; }
+  .journal-number { font-size: 23px; }
+  .journal-arrow { display: none; }
+  .journal-entry h2 { font-size: 27px; }
+  .reading-wrap { width: calc(100% - 44px); }
+  .post-header { padding-top: 38px; padding-bottom: 28px; }
+  .interior .post-title { font-size: 32px; line-height: 1.7; }
+  .post-body { font-size: 20px; line-height: 2.05; padding-top: 26px; }
+  .post-body p:last-child { font-size: 22px; }
+  .post-footer { padding-bottom: 40px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -37,7 +37,7 @@ function resizeFlow() {
 
 function drawFlow(now) {
   context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-  const opacity = Math.max(0, 1 - (now - lastMove) / 650);
+  const opacity = Math.max(0, 1 - (now - lastMove) / 260);
   if (!opacity || !flowPreference.matches || document.hidden) {
     frame = 0;
     return;
