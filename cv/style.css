@@ -56,10 +56,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 .theme-choices { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero { padding-bottom: 27px; }
 .eyebrow { font: 18px/1.5 "Times New Roman", serif; letter-spacing: .4px; color: var(--muted); margin: 0 0 26px; }
-h1 { font: 46px/1.35 var(--heading); color: var(--ink); margin: 0; letter-spacing: 2px; }
+h1 { font: 46px/1.35 var(--heading); color: var(--ink); margin: 0 0 21px; letter-spacing: 2px; }
 .name-en { display: block; font: 25px/1.5 var(--heading); letter-spacing: .3px; margin-top: 7px; }
 html[lang="en"] h1 { font-size: 42px; letter-spacing: 0; }
-.alias { color: var(--muted); margin: 11px 0 21px; font-family: var(--kai); }
+.alias { display: inline-block; color: var(--muted); margin-left: 24px; font: 18px/1.5 var(--kai); letter-spacing: 0; white-space: nowrap; }
 .hero-statement { font: 24px/1.7 var(--kai); color: var(--ink); margin: 0 0 18px; }
 p { margin: 10px 0; }
 .hero-links { display: flex; gap: 23px; flex-wrap: wrap; align-items: center; margin-top: 23px; font-size: 17px; }
@@ -93,9 +93,8 @@ h4 { font: 20px/1.7 var(--kai); color: var(--ink); margin: 0; }
 ul { padding-left: 1.25em; margin: 12px 0 0; }
 li { padding-left: .12em; margin: 7px 0; }
 .name-list { margin: 0; }
-.practice-highlight { padding: 15px 0 18px; border-top: 1px solid var(--line); margin-bottom: 8px; }
-.practice-highlight .detail-label { display: block; margin-bottom: 5px; }
-.practice-highlight h4 { font-size: 22px; }
+.practice-group + .practice-group { margin-top: 22px; }
+.practice-group h4 { margin-bottom: 9px; }
 .honors { list-style: none; margin: 0; padding: 0; }
 .honors li { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 18px; padding: 15px 0; margin: 0; border-bottom: 1px solid var(--line); }
 .honors li:first-child { padding-top: 0; }
@@ -141,7 +140,8 @@ li { padding-left: .12em; margin: 7px 0; }
   .sidebar nav a { font-size: 16px; }
   .paper { width: 100%; min-height: auto; padding: 34px 24px; }
   h1 { font-size: 39px; }
-  html[lang="en"] h1 { font-size: 36px; }
+  html[lang="en"] h1 { font-size: 30px; }
+  html[lang="en"] h1 > .alias { margin-left: 12px; }
   .name-en { font-size: 24px; }
   .hero-statement { font-size: 23px; }
   .hero-links { gap: 14px 22px; }
@@ -178,7 +178,7 @@ li { padding-left: .12em; margin: 7px 0; }
   .section-heading { margin-bottom: 15px; break-after: avoid; }
   .research-glass { background: #f8f9f7; border: 1px solid #ddd; box-shadow: none; backdrop-filter: none; print-color-adjust: exact; }
   .research-glass h3 { font-size: 16pt; }
-  .research-glass, .project-entry, .honors li, .interest-entry, .practice-highlight, .footer { break-inside: avoid; }
+  .research-glass, .project-entry, .honors li, .interest-entry, .footer { break-inside: avoid; }
   .project-entry { padding: 17px 0; }
   .experience-category { padding: 17px 0; }
   .experience-category > h3, h4 { break-after: avoid; }
