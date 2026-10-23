@@ -32,8 +32,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .home { background: #0a2424; color: #f5f3e8; }
 .home-cover { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; min-height: max(800px, 100svh); overflow: hidden; }
 .cover-scenes, .cover-shade { position: absolute; inset: 0; z-index: -2; }
-.cover-scene { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 56%; opacity: 0; transition: opacity 2s ease; }
-.cover-scene.is-active { opacity: 1; }
+.cover-scene { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 56%; }
 .cover-shade { z-index: -1; background: linear-gradient(90deg, #031b1dd4 0%, #09232382 42%, #08262720 75%), linear-gradient(0deg, #071e25e8 0%, transparent 45%, #00181a35 100%); }
 .cover-main { padding-top: 145px; padding-bottom: 47px; }
 .eyebrow { font: 17px/1.5 "Times New Roman", var(--body); letter-spacing: 1.4px; margin: 0 0 20px; }
@@ -61,11 +60,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .cover-foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px 30px; font-size: 15px; padding: 18px 0 20px; color: #cad9d0; }
 .cover-foot p { margin: 0; }
 .foot-separator { margin: 0 16px; opacity: .5; }
-.scene-controls { display: flex; align-items: center; gap: 13px; }
-.scene-controls button { background: none; border: 0; padding: 2px 0; font: 16px/1.5 var(--body); border-bottom: 1px solid transparent; }
-.scene-controls .is-active { color: #fff; border-bottom-color: currentColor; }
-.scene-controls .scene-pause { margin-left: 15px; font-size: 15px; }
-.interior { --ink: #f4f2e7; --muted: #c0cfc4; --line: #c7dace38; background: linear-gradient(135deg, #062225d9, #0a282af0), url('../assets/images/forest-coast.webp') center / cover fixed; }
+.pointer-flow { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 6; pointer-events: none; }
+body:has(dialog[open]) .pointer-flow { visibility: hidden; }
+.interior { --ink: #f4f2e7; --muted: #c0cfc4; --line: #c7dace38; background: linear-gradient(135deg, #062225d9, #0a282af0), url('../assets/images/forest-breeze.webp') center / cover fixed; }
 .interior .site-header { position: relative; color: var(--ink); background: transparent; }
 .interior .navigation { border-bottom-color: var(--line); }
 .breadcrumb { display: flex; align-items: center; gap: 13px; color: var(--muted); font-size: 16px; padding-top: 30px; }
@@ -107,17 +104,36 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .empty-index { color: var(--muted); margin: 0 0 12px; font: 18px/1.6 "Times New Roman", serif; }
 .empty-gallery h2 { font: 29px/1.6 var(--title); margin: 0; }
 .empty-gallery > p:not(.empty-index) { margin: 13px 0 23px; color: var(--muted); }
+.album-index { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 42px 24px; padding: 35px 0 55px; }
+.album-card { min-width: 0; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.album-cover { overflow: hidden; aspect-ratio: 4 / 3; background: #0b2020; }
+.album-cover img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.album-card:hover .album-cover img { transform: scale(1.035); }
+.album-card-title { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 16px; margin-top: 17px; }
+.album-card h2 { display: flex; justify-content: space-between; gap: 15px; font: 25px/1.6 var(--kai); margin: 7px 0 0; }
+.album-card h2 span { font: 22px/1.6 "Times New Roman", serif; }
+.album-sections { display: flex; gap: 30px; padding: 25px 0 0; }
+.album-sections a { border-bottom: 1px solid var(--line); }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 28px; }
 .gallery-grid:not(:empty) { padding-top: 32px; padding-bottom: 25px; }
+.gallery-grid.photography { display: block; columns: 3 280px; column-gap: 28px; }
+.gallery-grid.photography .gallery-item { display: inline-block; width: 100%; margin-bottom: 28px; break-inside: avoid; }
+.album-subheading { column-span: all; font: 29px/1.6 var(--kai); margin: 0 0 26px; padding-top: 5px; scroll-margin-top: 30px; }
+.album-subheading:not(:first-child) { border-top: 1px solid var(--line); padding-top: 35px; }
 .gallery-grid.design { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery-item { margin: 0; min-width: 0; }
-.gallery-item button { display: block; padding: 0; width: 100%; border: 0; background: #e7eadf; }
-.gallery-item img { display: block; width: 100%; height: 350px; object-fit: cover; transition: opacity .2s; }
+.gallery-item button { display: block; padding: 0; width: 100%; border: 0; background: transparent; }
+.gallery-item img { display: block; width: 100%; height: auto; object-fit: contain; transition: opacity .2s; }
 .gallery-item button:hover img { opacity: .9; }
 .gallery-grid.design img { height: 480px; object-fit: contain; }
 .gallery-item figcaption { margin-top: 13px; }
-.gallery-item h2 { font: 23px/1.6 var(--kai); margin: 0; }
+.gallery-item h2, .gallery-item h3 { font: 22px/1.6 var(--kai); margin: 0; }
 .gallery-item p { font-size: 16px; color: var(--muted); margin: 4px 0 0; }
+.gallery-grid.single-work { display: block; padding-block: 45px; }
+.single-work .gallery-item { display: grid; grid-template-columns: minmax(0, 560px) minmax(0, 1fr); gap: 70px; align-items: center; }
+.single-work .gallery-item img { height: auto; }
+.single-work .gallery-item h2 { font-size: 30px; }
+.single-work .gallery-item p { margin-top: 18px; font-size: 19px; }
 .next-collection { display: flex; justify-content: space-between; gap: 25px; padding-top: 30px; padding-bottom: 65px; border-top: 1px solid var(--line); font: 20px/1.8 var(--kai); }
 .image-viewer { background: #0b1b17f5; color: #fff; border: 1px solid #ffffff40; width: min(1500px, 96vw); height: 94vh; padding: 65px 70px 45px; }
 .image-viewer::backdrop { background: #03100de0; }
@@ -152,6 +168,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .interest-path { grid-template-columns: 100px minmax(0, 1fr); }
   .collection-header { gap: 40px; }
   .gallery-grid.design { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .album-index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .single-work .gallery-item { gap: 40px; grid-template-columns: 1.2fr 1fr; }
 }
 @media (max-width: 720px) {
   .wrap { width: calc(100% - 44px); }
@@ -182,7 +200,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .cover-foot { font-size: 15px; padding-top: 22px; padding-bottom: 24px; }
   .cover-foot p { display: flex; flex-wrap: wrap; gap: 0 10px; }
   .foot-separator { margin-inline: 4px; }
-  .scene-controls { margin-top: 2px; }
   .breadcrumb { padding-top: 24px; font-size: 16px; }
   .beyond-intro { grid-template-columns: 1fr; gap: 35px; padding-top: 42px; padding-bottom: 45px; }
   .interior h1 { font-size: 46px; letter-spacing: 2px; margin-bottom: 17px; }
@@ -205,8 +222,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .empty-gallery h2 { font-size: 27px; }
   .empty-gallery > p:not(.empty-index) { font-size: 18px; }
   .gallery-grid, .gallery-grid.design { grid-template-columns: 1fr; }
-  .gallery-item img { height: auto; max-height: 560px; object-fit: contain; }
-  .gallery-grid.design img { height: auto; max-height: 620px; }
+  .album-index { grid-template-columns: 1fr; gap: 35px; }
+  .album-card h2 { font-size: 27px; }
+  .gallery-grid.photography { columns: 1; }
+  .gallery-grid.photography .gallery-item { margin-bottom: 30px; }
+  .gallery-item img { height: auto; object-fit: contain; }
+  .gallery-grid.design img { height: auto; }
+  .single-work .gallery-item { display: block; }
+  .single-work .gallery-item h2 { font-size: 25px; }
+  .single-work .gallery-item figcaption { margin-top: 25px; }
   .next-collection { padding-bottom: 40px; font-size: 18px; }
   .image-viewer { padding: 60px 30px 45px; width: 98vw; }
   .viewer-prev { left: 0; }

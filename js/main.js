@@ -18,37 +18,74 @@ document.addEventListener('keydown', (event) => {
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-const scenes = Array.from(document.querySelectorAll('.cover-scene'));
-if (scenes.length) {
-  const choices = Array.from(document.querySelectorAll('.scene-choice'));
-  const pause = document.querySelector('.scene-pause');
-  let active = 0;
-  let timer;
-  let paused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const flowPreference = window.matchMedia('(pointer: fine) and (prefers-reduced-motion: no-preference)');
+const flow = document.createElement('canvas');
+flow.className = 'pointer-flow';
+flow.setAttribute('aria-hidden', 'true');
+const context = flow.getContext('2d');
+let points = [];
+let pointer = { x: 0, y: 0 };
+let lastMove = 0;
+let frame = 0;
 
-  function showScene(index) {
-    active = index;
-    scenes.forEach((scene, i) => scene.classList.toggle('is-active', i === active));
-    choices.forEach((choice, i) => {
-      choice.classList.toggle('is-active', i === active);
-      choice.setAttribute('aria-pressed', String(i === active));
-    });
-  }
-
-  function updatePlayback() {
-    clearInterval(timer);
-    pause.setAttribute('aria-pressed', String(paused));
-    pause.textContent = paused ? '播放轮播' : '暂停轮播';
-    if (!paused) timer = setInterval(() => showScene((active + 1) % scenes.length), 14000);
-  }
-
-  choices.forEach((choice, i) => choice.addEventListener('click', () => {
-    showScene(i);
-    updatePlayback();
-  }));
-  pause.addEventListener('click', () => {
-    paused = !paused;
-    updatePlayback();
-  });
-  updatePlayback();
+function resizeFlow() {
+  const scale = Math.min(window.devicePixelRatio || 1, 1.5);
+  flow.width = window.innerWidth * scale;
+  flow.height = window.innerHeight * scale;
+  context.setTransform(scale, 0, 0, scale, 0, 0);
 }
+
+function drawFlow(now) {
+  context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+  const opacity = Math.max(0, 1 - (now - lastMove) / 650);
+  if (!opacity || !flowPreference.matches || document.hidden) {
+    frame = 0;
+    return;
+  }
+  points[0] = { ...pointer };
+  for (let i = 1; i < points.length; i++) {
+    points[i].x += (points[i - 1].x - points[i].x) * .28;
+    points[i].y += (points[i - 1].y - points[i].y) * .28;
+  }
+  const tail = points[points.length - 1];
+  if (Math.hypot(pointer.x - tail.x, pointer.y - tail.y) > 1) {
+    const light = context.createLinearGradient(tail.x, tail.y, pointer.x, pointer.y);
+    light.addColorStop(0, 'transparent');
+    light.addColorStop(.5, `rgba(135, 197, 184, ${opacity * .35})`);
+    light.addColorStop(1, `rgba(229, 236, 211, ${opacity * .7})`);
+    for (const offset of [0, 5]) {
+      context.beginPath();
+      context.moveTo(points[0].x, points[0].y + offset);
+      for (let i = 1; i < points.length - 1; i++) {
+        context.quadraticCurveTo(points[i].x, points[i].y + offset,
+          (points[i].x + points[i + 1].x) / 2, (points[i].y + points[i + 1].y) / 2 + offset);
+      }
+      context.strokeStyle = light;
+      context.lineWidth = offset ? .6 : 1.4;
+      context.stroke();
+    }
+  }
+  frame = requestAnimationFrame(drawFlow);
+}
+
+function updateFlowPreference() {
+  if (flowPreference.matches) {
+    document.body.append(flow);
+    resizeFlow();
+  } else {
+    flow.remove();
+    cancelAnimationFrame(frame);
+    frame = 0;
+  }
+}
+
+window.addEventListener('pointermove', (event) => {
+  if (!flowPreference.matches || event.pointerType === 'touch') return;
+  pointer = { x: event.clientX, y: event.clientY };
+  if (!frame) points = Array.from({ length: 24 }, () => ({ ...pointer }));
+  lastMove = performance.now();
+  if (!frame) frame = requestAnimationFrame(drawFlow);
+}, { passive: true });
+window.addEventListener('resize', resizeFlow, { passive: true });
+flowPreference.addEventListener('change', updateFlowPreference);
+updateFlowPreference();

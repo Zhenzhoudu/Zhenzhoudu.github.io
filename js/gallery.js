@@ -15,7 +15,7 @@ function showWork(index) {
   const work = works[selected];
   image.src = work.image;
   image.alt = work.alt || work.title;
-  caption.textContent = work.title;
+  caption.textContent = `${work.title} · ${selected + 1} / ${works.length}`;
   original.href = work.image;
   previous.hidden = next.hidden = works.length < 2;
 }
@@ -26,9 +26,18 @@ fetch(gallery.dataset.gallerySource)
     return response.json();
   })
   .then((items) => {
-    works = items;
+    works = gallery.dataset.galleryAlbum ? items.filter((work) => work.album === gallery.dataset.galleryAlbum) : items;
     empty.hidden = works.length > 0;
+    let group = '';
     works.forEach((work, index) => {
+      if (work.group && work.group !== group) {
+        group = work.group;
+        const heading = document.createElement('h2');
+        heading.className = 'album-subheading';
+        heading.id = group === '北京' ? 'beijing-city' : 'beijing-pool';
+        heading.textContent = group;
+        gallery.append(heading);
+      }
       const figure = document.createElement('figure');
       figure.className = 'gallery-item';
       const button = document.createElement('button');
@@ -38,9 +47,12 @@ fetch(gallery.dataset.gallerySource)
       thumbnail.src = work.thumbnail || work.image;
       thumbnail.alt = work.alt || work.title;
       thumbnail.loading = 'lazy';
+      thumbnail.width = work.width;
+      thumbnail.height = work.height;
+      thumbnail.decoding = 'async';
       button.append(thumbnail);
       const text = document.createElement('figcaption');
-      const title = document.createElement('h2');
+      const title = document.createElement(work.group ? 'h3' : 'h2');
       title.textContent = work.title;
       text.append(title);
       if (work.description) {
