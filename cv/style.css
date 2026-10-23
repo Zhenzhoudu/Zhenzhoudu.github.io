@@ -85,6 +85,9 @@ h4 { font: 20px/1.7 var(--kai); color: var(--ink); margin: 0; }
 .project-type { font: 18px/1.7 var(--kai); color: var(--muted); }
 .project-entry h3 { margin-top: 10px; }
 .project-entry > p:last-child { margin-bottom: 0; }
+.project-outcome { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px 18px; padding-top: 14px; margin-top: 18px; border-top: 1px solid var(--line); font-size: 18px; }
+.project-outcome > span { color: var(--muted); font-family: var(--kai); }
+.project-outcome a { border-bottom: 1px solid currentColor; overflow-wrap: anywhere; }
 .experience-category { padding: 23px 0; border-bottom: 1px solid var(--line); }
 .experience-category:first-of-type { padding-top: 0; }
 .experience-category:last-child { padding-bottom: 0; border: 0; }
