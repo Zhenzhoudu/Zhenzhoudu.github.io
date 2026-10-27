@@ -23,8 +23,8 @@ const flow = document.createElement('canvas');
 flow.className = 'pointer-flow';
 flow.setAttribute('aria-hidden', 'true');
 const context = flow.getContext('2d');
-let points = [];
 let pointer = { x: 0, y: 0 };
+let tail;
 let lastMove = 0;
 let frame = 0;
 
@@ -37,34 +37,37 @@ function resizeFlow() {
 
 function drawFlow(now) {
   context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-  const opacity = Math.max(0, 1 - (now - lastMove) / 260);
-  if (!opacity || !flowPreference.matches || document.hidden) {
+  const opacity = Math.max(0, 1 - (now - lastMove) / 140);
+  if (!opacity || !tail || !flowPreference.matches || document.hidden) {
     frame = 0;
+    tail = null;
     return;
   }
-  points[0] = { ...pointer };
-  for (let i = 1; i < points.length; i++) {
-    points[i].x += (points[i - 1].x - points[i].x) * .28;
-    points[i].y += (points[i - 1].y - points[i].y) * .28;
+  const dx = pointer.x - tail.x;
+  const dy = pointer.y - tail.y;
+  const distance = Math.hypot(dx, dy);
+  if (distance > 44) {
+    tail.x = pointer.x - dx / distance * 44;
+    tail.y = pointer.y - dy / distance * 44;
   }
-  const tail = points[points.length - 1];
-  if (Math.hypot(pointer.x - tail.x, pointer.y - tail.y) > 1) {
+  if (distance > 2) {
+    const normal = { x: -dy / distance, y: dx / distance };
     const light = context.createLinearGradient(tail.x, tail.y, pointer.x, pointer.y);
     light.addColorStop(0, 'transparent');
-    light.addColorStop(.5, `rgba(135, 197, 184, ${opacity * .35})`);
-    light.addColorStop(1, `rgba(229, 236, 211, ${opacity * .7})`);
-    for (const offset of [0, 5]) {
+    light.addColorStop(.6, `rgba(150, 191, 179, ${opacity * .08})`);
+    light.addColorStop(1, `rgba(195, 215, 201, ${opacity * .18})`);
+    for (const offset of [0, 2.5]) {
       context.beginPath();
-      context.moveTo(points[0].x, points[0].y + offset);
-      for (let i = 1; i < points.length - 1; i++) {
-        context.quadraticCurveTo(points[i].x, points[i].y + offset,
-          (points[i].x + points[i + 1].x) / 2, (points[i].y + points[i + 1].y) / 2 + offset);
-      }
+      context.moveTo(tail.x + normal.x * offset, tail.y + normal.y * offset);
+      context.quadraticCurveTo((tail.x + pointer.x) / 2 + normal.x * (3 + offset),
+        (tail.y + pointer.y) / 2 + normal.y * (3 + offset), pointer.x, pointer.y);
       context.strokeStyle = light;
-      context.lineWidth = offset ? .6 : 1.4;
+      context.lineWidth = offset ? .35 : .65;
       context.stroke();
     }
   }
+  tail.x += (pointer.x - tail.x) * .4;
+  tail.y += (pointer.y - tail.y) * .4;
   frame = requestAnimationFrame(drawFlow);
 }
 
@@ -81,8 +84,13 @@ function updateFlowPreference() {
 
 window.addEventListener('pointermove', (event) => {
   if (!flowPreference.matches || event.pointerType === 'touch') return;
+  if (event.target.closest('p, h1, h2, h3, li, blockquote, figcaption, .post, .gallery-item, a, button, input, textarea, select, [contenteditable]')) {
+    lastMove = 0;
+    tail = null;
+    return;
+  }
   pointer = { x: event.clientX, y: event.clientY };
-  if (!frame) points = Array.from({ length: 24 }, () => ({ ...pointer }));
+  if (!tail) tail = { ...pointer };
   lastMove = performance.now();
   if (!frame) frame = requestAnimationFrame(drawFlow);
 }, { passive: true });
