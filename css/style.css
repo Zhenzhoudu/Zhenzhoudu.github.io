@@ -112,22 +112,35 @@ body:has(dialog[open]) .pointer-flow { visibility: hidden; }
 .album-card-title { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 16px; margin-top: 17px; }
 .album-card h2 { display: flex; justify-content: space-between; gap: 15px; font: 25px/1.6 var(--kai); margin: 7px 0 0; }
 .album-card h2 span { font: 22px/1.6 "Times New Roman", serif; }
-.album-sections { display: flex; gap: 30px; padding: 25px 0 0; }
-.album-sections a { border-bottom: 1px solid var(--line); }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 28px; }
 .gallery-grid:not(:empty) { padding-top: 32px; padding-bottom: 25px; }
-.gallery-grid.photography { display: block; }
-.photo-row { display: flex; gap: 24px; width: min(100%, calc(var(--row-ratio) * 460px + var(--row-gaps))); margin: 0 auto 44px; align-items: start; }
-.gallery-grid.photography .gallery-item { flex: var(--photo-ratio) 1 0; margin: 0; }
-.gallery-grid.photography .gallery-item button { aspect-ratio: var(--photo-ratio); }
-.gallery-grid.photography .gallery-item img { height: 100%; }
-.album-subheading { font: 29px/1.6 var(--kai); margin: 0 0 30px; padding-top: 5px; scroll-margin-top: 30px; }
-.album-subheading:not(:first-child) { border-top: 1px solid var(--line); padding-top: 35px; }
+.album-page .breadcrumb { padding-top: 22px; }
+.book-header { display: flex; justify-content: space-between; align-items: end; gap: 25px; padding-top: 24px; padding-bottom: 28px; }
+.book-header .eyebrow { margin-bottom: 8px; }
+.interior .book-header h1 { font-size: 48px; line-height: 1.4; margin: 0; letter-spacing: 2px; }
+.book-header h1 span { font: 24px/1.6 "Times New Roman", serif; margin-left: 22px; letter-spacing: .5px; }
+.book-header-meta { text-align: right; }
+.book-header-meta p { margin: 0 0 8px; color: var(--muted); }
+.book-header-meta .text-link { font-size: 17px; }
+.photo-book { padding: 32px 36px 10px; background: #092326f5; border-top: 1px solid var(--line); }
+.book-chapter-nav { display: flex; flex-wrap: wrap; gap: 12px 28px; padding-bottom: 25px; margin-bottom: 28px; border-bottom: 1px solid var(--line); color: var(--muted); font: 18px/1.7 var(--kai); }
+.book-chapter-nav a:hover { color: var(--ink); }
+.book-chapter { scroll-margin-top: 28px; }
+.book-chapter + .book-chapter { padding-top: 12px; margin-top: 24px; border-top: 1px solid var(--line); }
+.book-chapter > h2 { font: 27px/1.65 var(--kai); margin: 0 0 28px; }
+.book-spread { width: 100%; margin: 0 auto 52px; }
+.book-spread.is-lead { max-width: 780px; }
+.book-spread.is-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; max-width: 1000px; }
+.book-spread.is-lead .work-link { width: min(100%,var(--source-width),calc(var(--work-ratio) * 620px)); margin-inline: auto; }
+.book-spread.is-pair .work-link { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; background: #102b2d; padding: 12px; }
+.book-spread.is-pair.is-tall .work-link { aspect-ratio: 3 / 4; }
+.book-spread.is-pair .work-image { width: 100%; height: 100%; object-fit: contain; }
+.book-spread figcaption { text-align: center; font: 18px/1.6 "Times New Roman", serif; color: var(--muted); margin-top: 12px; }
 .gallery-grid.design { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery-item { margin: 0; min-width: 0; }
-.gallery-item button { display: block; padding: 0; width: 100%; border: 0; background: transparent; }
+.work-link { display: block; padding: 0; width: 100%; border: 0; background: transparent; }
 .gallery-item img { display: block; width: 100%; height: auto; object-fit: contain; transition: opacity .2s; }
-.gallery-item button:hover img { opacity: .9; }
+.work-link:hover img { opacity: .94; }
 .gallery-grid.design img { height: 480px; object-fit: contain; }
 .gallery-item figcaption { margin-top: 13px; }
 .gallery-item h2, .gallery-item h3 { font: 22px/1.6 var(--kai); margin: 0; }
@@ -242,10 +255,18 @@ body:has(dialog[open]) .pointer-flow { visibility: hidden; }
   .gallery-grid, .gallery-grid.design { grid-template-columns: 1fr; }
   .album-index { grid-template-columns: 1fr; gap: 35px; }
   .album-card h2 { font-size: 27px; }
-  .photo-row { width: 100%; flex-direction: column; gap: 30px; margin-bottom: 30px; }
-  .gallery-grid.photography .gallery-item { flex: none; width: 100%; }
-  .gallery-grid.photography .gallery-item button { aspect-ratio: auto; }
-  .gallery-grid.photography .gallery-item img { height: auto; max-height: 620px; }
+  .book-header { align-items: start; flex-direction: column; gap: 16px; padding-block: 24px; }
+  .interior .book-header h1 { font-size: 40px; }
+  .book-header h1 span { font-size: 22px; margin-left: 12px; }
+  .book-header-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 15px; text-align: left; }
+  .book-header-meta p { margin: 0; font-size: 17px; }
+  .photo-book { padding: 24px 16px 5px; }
+  .book-chapter-nav { font-size: 17px; gap: 9px 20px; padding-bottom: 20px; margin-bottom: 22px; }
+  .book-chapter > h2 { font-size: 24px; margin-bottom: 22px; }
+  .book-spread { margin-bottom: 32px; }
+  .book-spread.is-pair { grid-template-columns: 1fr; gap: 30px; }
+  .book-spread.is-pair .work-link { padding: 10px; }
+  .book-spread.is-pair.is-tall .work-link { aspect-ratio: 3 / 4; }
   .gallery-item img { height: auto; object-fit: contain; }
   .gallery-grid.design img { height: auto; }
   .single-work .gallery-item { display: block; }

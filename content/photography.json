@@ -8,7 +8,24 @@
     "width": 692,
     "height": 519,
     "sourceNumber": 6,
-    "row": 1
+    "chapter": "城市与日常",
+    "chapterId": "beijing-city",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/01-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 12298
+      },
+      {
+        "src": "/assets/photography/beijing/previews/01-692.webp",
+        "width": 692,
+        "height": 519,
+        "bytes": 24034
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/01-480.webp"
   },
   {
     "album": "beijing",
@@ -19,7 +36,24 @@
     "width": 647,
     "height": 485,
     "sourceNumber": 3,
-    "row": 1
+    "chapter": "城市与日常",
+    "chapterId": "beijing-city",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/02-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18416
+      },
+      {
+        "src": "/assets/photography/beijing/previews/02-647.webp",
+        "width": 647,
+        "height": 485,
+        "bytes": 34228
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/02-480.webp"
   },
   {
     "album": "beijing",
@@ -30,150 +64,376 @@
     "width": 697,
     "height": 464,
     "sourceNumber": 11,
-    "row": 1
+    "chapter": "城市与日常",
+    "chapterId": "beijing-city",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/03-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 18172
+      },
+      {
+        "src": "/assets/photography/beijing/previews/03-697.webp",
+        "width": 697,
+        "height": 464,
+        "bytes": 39560
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/03-480.webp"
   },
   {
     "album": "beijing",
     "group": "北京",
     "title": "北京 · 04",
-    "image": "/assets/photography/beijing/04.webp",
-    "alt": "阳光下的绿叶与墙面树影",
-    "width": 572,
-    "height": 429,
-    "sourceNumber": 7,
-    "row": 2
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 05",
-    "image": "/assets/photography/beijing/05.webp",
-    "alt": "蓝天、绿树和水面上的倒影",
-    "width": 702,
-    "height": 527,
-    "sourceNumber": 4,
-    "row": 2
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 06",
-    "image": "/assets/photography/beijing/06.webp",
-    "alt": "湖畔芦苇与远处绿树",
-    "width": 551,
-    "height": 734,
-    "sourceNumber": 5,
-    "row": 2
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 07",
-    "image": "/assets/photography/beijing/07.webp",
-    "alt": "群山间蜿蜒延伸的长城",
-    "width": 721,
-    "height": 417,
-    "sourceNumber": 17,
-    "row": 3
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 08",
-    "image": "/assets/photography/beijing/08.webp",
-    "alt": "蓝天背景下的金黄银杏叶",
-    "width": 758,
-    "height": 529,
-    "sourceNumber": 10,
-    "row": 3
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 09",
-    "image": "/assets/photography/beijing/09.webp",
-    "alt": "洒满金黄色树叶的小径",
-    "width": 443,
-    "height": 591,
-    "sourceNumber": 8,
-    "row": 4
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 10",
-    "image": "/assets/photography/beijing/10.webp",
-    "alt": "蓝天下垂落的秋叶",
-    "width": 737,
-    "height": 553,
-    "sourceNumber": 15,
-    "row": 4
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 11",
-    "image": "/assets/photography/beijing/13.webp",
-    "alt": "暖色光线中的红黄秋叶",
-    "width": 666,
-    "height": 499,
-    "sourceNumber": 16,
-    "row": 4
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 12",
-    "image": "/assets/photography/beijing/11.webp",
-    "alt": "红砖建筑上垂落的藤蔓",
-    "width": 442,
-    "height": 589,
-    "sourceNumber": 9,
-    "row": 5
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 13",
-    "image": "/assets/photography/beijing/12.webp",
-    "alt": "阳光照在爬满藤蔓的窗前",
-    "width": 787,
-    "height": 1049,
-    "sourceNumber": 14,
-    "row": 5
-  },
-  {
-    "album": "beijing",
-    "group": "北京",
-    "title": "北京 · 14",
     "image": "/assets/photography/beijing/14.webp",
     "alt": "暖光下悬挂着文字的红色灯笼",
     "width": 1080,
     "height": 1439,
     "sourceNumber": 13,
-    "row": 5
+    "chapter": "城市与日常",
+    "chapterId": "beijing-city",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/14-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 34558
+      },
+      {
+        "src": "/assets/photography/beijing/previews/14-768.webp",
+        "width": 768,
+        "height": 1023,
+        "bytes": 64410
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/14-480.webp"
   },
   {
     "album": "beijing",
     "group": "北京",
-    "title": "北京 · 15",
+    "title": "北京 · 05",
     "image": "/assets/photography/beijing/15.webp",
     "alt": "暗色空间中白色花枝装置",
     "width": 492,
     "height": 370,
     "sourceNumber": 12,
-    "row": 6
+    "chapter": "城市与日常",
+    "chapterId": "beijing-city",
+    "spread": 4,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/15-480.webp",
+        "width": 480,
+        "height": 361,
+        "bytes": 21894
+      },
+      {
+        "src": "/assets/photography/beijing/previews/15-492.webp",
+        "width": 492,
+        "height": 370,
+        "bytes": 25138
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/15-480.webp"
   },
   {
     "album": "beijing",
     "group": "北京",
-    "title": "北京 · 16",
+    "title": "北京 · 06",
     "image": "/assets/photography/beijing/16.webp",
     "alt": "窗边花枝照片与雪花图案组成的画面",
     "width": 514,
     "height": 514,
     "sourceNumber": 2,
-    "row": 6
+    "chapter": "城市与日常",
+    "chapterId": "beijing-city",
+    "spread": 4,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/16-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 14292
+      },
+      {
+        "src": "/assets/photography/beijing/previews/16-514.webp",
+        "width": 514,
+        "height": 514,
+        "bytes": 16340
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/16-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 07",
+    "image": "/assets/photography/beijing/08.webp",
+    "alt": "蓝天背景下的金黄银杏叶",
+    "width": 758,
+    "height": 529,
+    "sourceNumber": 10,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 5,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/08-480.webp",
+        "width": 480,
+        "height": 335,
+        "bytes": 43518
+      },
+      {
+        "src": "/assets/photography/beijing/previews/08-758.webp",
+        "width": 758,
+        "height": 529,
+        "bytes": 89688
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/08-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 08",
+    "image": "/assets/photography/beijing/09.webp",
+    "alt": "洒满金黄色树叶的小径",
+    "width": 443,
+    "height": 591,
+    "sourceNumber": 8,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 6,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/09-443.webp",
+        "width": 443,
+        "height": 591,
+        "bytes": 88066
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/09-443.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 09",
+    "image": "/assets/photography/beijing/13.webp",
+    "alt": "暖色光线中的红黄秋叶",
+    "width": 666,
+    "height": 499,
+    "sourceNumber": 16,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 6,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/13-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 42010
+      },
+      {
+        "src": "/assets/photography/beijing/previews/13-666.webp",
+        "width": 666,
+        "height": 499,
+        "bytes": 81996
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/13-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 10",
+    "image": "/assets/photography/beijing/11.webp",
+    "alt": "红砖建筑上垂落的藤蔓",
+    "width": 442,
+    "height": 589,
+    "sourceNumber": 9,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 7,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/11-442.webp",
+        "width": 442,
+        "height": 589,
+        "bytes": 59578
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/11-442.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 11",
+    "image": "/assets/photography/beijing/12.webp",
+    "alt": "阳光照在爬满藤蔓的窗前",
+    "width": 787,
+    "height": 1049,
+    "sourceNumber": 14,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 7,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/12-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 93126
+      },
+      {
+        "src": "/assets/photography/beijing/previews/12-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 228714
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/12-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 12",
+    "image": "/assets/photography/beijing/10.webp",
+    "alt": "蓝天下垂落的秋叶",
+    "width": 737,
+    "height": 553,
+    "sourceNumber": 15,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 8,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/10-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 33938
+      },
+      {
+        "src": "/assets/photography/beijing/previews/10-737.webp",
+        "width": 737,
+        "height": 553,
+        "bytes": 65592
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/10-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 13",
+    "image": "/assets/photography/beijing/04.webp",
+    "alt": "阳光下的绿叶与墙面树影",
+    "width": 572,
+    "height": 429,
+    "sourceNumber": 7,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 9,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/04-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 43106
+      },
+      {
+        "src": "/assets/photography/beijing/previews/04-572.webp",
+        "width": 572,
+        "height": 429,
+        "bytes": 66236
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/04-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 14",
+    "image": "/assets/photography/beijing/06.webp",
+    "alt": "湖畔芦苇与远处绿树",
+    "width": 551,
+    "height": 734,
+    "sourceNumber": 5,
+    "chapter": "草木与光影",
+    "chapterId": "beijing-plants",
+    "spread": 9,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/06-480.webp",
+        "width": 480,
+        "height": 639,
+        "bytes": 44634
+      },
+      {
+        "src": "/assets/photography/beijing/previews/06-551.webp",
+        "width": 551,
+        "height": 734,
+        "bytes": 63348
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/06-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 15",
+    "image": "/assets/photography/beijing/07.webp",
+    "alt": "群山间蜿蜒延伸的长城",
+    "width": 721,
+    "height": 417,
+    "sourceNumber": 17,
+    "chapter": "山水与花间",
+    "chapterId": "beijing-walks",
+    "spread": 10,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/07-480.webp",
+        "width": 480,
+        "height": 278,
+        "bytes": 17632
+      },
+      {
+        "src": "/assets/photography/beijing/previews/07-721.webp",
+        "width": 721,
+        "height": 417,
+        "bytes": 46210
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/07-480.webp"
+  },
+  {
+    "album": "beijing",
+    "group": "北京",
+    "title": "北京 · 16",
+    "image": "/assets/photography/beijing/05.webp",
+    "alt": "蓝天、绿树和水面上的倒影",
+    "width": 702,
+    "height": 527,
+    "sourceNumber": 4,
+    "chapter": "山水与花间",
+    "chapterId": "beijing-walks",
+    "spread": 10,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/05-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 13262
+      },
+      {
+        "src": "/assets/photography/beijing/previews/05-702.webp",
+        "width": 702,
+        "height": 527,
+        "bytes": 27476
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/05-480.webp"
   },
   {
     "album": "beijing",
@@ -184,7 +444,24 @@
     "width": 971,
     "height": 573,
     "sourceNumber": 18,
-    "row": 7
+    "chapter": "山水与花间",
+    "chapterId": "beijing-walks",
+    "spread": 11,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/17-480.webp",
+        "width": 480,
+        "height": 283,
+        "bytes": 27354
+      },
+      {
+        "src": "/assets/photography/beijing/previews/17-768.webp",
+        "width": 768,
+        "height": 453,
+        "bytes": 56526
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/17-480.webp"
   },
   {
     "album": "beijing",
@@ -195,7 +472,24 @@
     "width": 944,
     "height": 526,
     "sourceNumber": 19,
-    "row": 7
+    "chapter": "山水与花间",
+    "chapterId": "beijing-walks",
+    "spread": 11,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/18-480.webp",
+        "width": 480,
+        "height": 267,
+        "bytes": 29552
+      },
+      {
+        "src": "/assets/photography/beijing/previews/18-768.webp",
+        "width": 768,
+        "height": 428,
+        "bytes": 63180
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/18-480.webp"
   },
   {
     "album": "beijing",
@@ -206,7 +500,24 @@
     "width": 509,
     "height": 287,
     "sourceNumber": 21,
-    "row": 8
+    "chapter": "人大一勺池专辑",
+    "chapterId": "beijing-pool",
+    "spread": 12,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/19-480.webp",
+        "width": 480,
+        "height": 271,
+        "bytes": 45974
+      },
+      {
+        "src": "/assets/photography/beijing/previews/19-509.webp",
+        "width": 509,
+        "height": 287,
+        "bytes": 58236
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/19-480.webp"
   },
   {
     "album": "beijing",
@@ -217,7 +528,24 @@
     "width": 500,
     "height": 282,
     "sourceNumber": 20,
-    "row": 8
+    "chapter": "人大一勺池专辑",
+    "chapterId": "beijing-pool",
+    "spread": 13,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/20-480.webp",
+        "width": 480,
+        "height": 271,
+        "bytes": 42638
+      },
+      {
+        "src": "/assets/photography/beijing/previews/20-500.webp",
+        "width": 500,
+        "height": 282,
+        "bytes": 51584
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/20-480.webp"
   },
   {
     "album": "beijing",
@@ -228,7 +556,18 @@
     "width": 427,
     "height": 737,
     "sourceNumber": 22,
-    "row": 9
+    "chapter": "人大一勺池专辑",
+    "chapterId": "beijing-pool",
+    "spread": 13,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/21-427.webp",
+        "width": 427,
+        "height": 737,
+        "bytes": 121300
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/21-427.webp"
   },
   {
     "album": "beijing",
@@ -239,7 +578,24 @@
     "width": 648,
     "height": 486,
     "sourceNumber": 23,
-    "row": 9
+    "chapter": "人大一勺池专辑",
+    "chapterId": "beijing-pool",
+    "spread": 14,
+    "previews": [
+      {
+        "src": "/assets/photography/beijing/previews/22-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 54150
+      },
+      {
+        "src": "/assets/photography/beijing/previews/22-648.webp",
+        "width": 648,
+        "height": 486,
+        "bytes": 106690
+      }
+    ],
+    "thumbnail": "/assets/photography/beijing/previews/22-480.webp"
   },
   {
     "album": "animals",
@@ -250,7 +606,24 @@
     "width": 601,
     "height": 451,
     "sourceNumber": 25,
-    "row": 10
+    "chapter": "日常相遇",
+    "chapterId": "animals-encounters",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/animals/previews/01-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18538
+      },
+      {
+        "src": "/assets/photography/animals/previews/01-601.webp",
+        "width": 601,
+        "height": 451,
+        "bytes": 30300
+      }
+    ],
+    "thumbnail": "/assets/photography/animals/previews/01-480.webp"
   },
   {
     "album": "animals",
@@ -261,7 +634,18 @@
     "width": 473,
     "height": 710,
     "sourceNumber": 24,
-    "row": 10
+    "chapter": "日常相遇",
+    "chapterId": "animals-encounters",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/animals/previews/02-473.webp",
+        "width": 473,
+        "height": 710,
+        "bytes": 66662
+      }
+    ],
+    "thumbnail": "/assets/photography/animals/previews/02-473.webp"
   },
   {
     "album": "animals",
@@ -272,40 +656,108 @@
     "width": 1080,
     "height": 1440,
     "sourceNumber": 26,
-    "row": 10
+    "chapter": "日常相遇",
+    "chapterId": "animals-encounters",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/animals/previews/03-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 50758
+      },
+      {
+        "src": "/assets/photography/animals/previews/03-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 99522
+      }
+    ],
+    "thumbnail": "/assets/photography/animals/previews/03-480.webp"
   },
   {
     "album": "sky",
     "group": "",
     "title": "天空专辑 · 01",
-    "image": "/assets/photography/sky/01.webp",
-    "alt": "树梢上方的蓝天与浅金色云霞",
-    "width": 706,
-    "height": 529,
-    "sourceNumber": 27,
-    "row": 11
-  },
-  {
-    "album": "sky",
-    "group": "",
-    "title": "天空专辑 · 02",
-    "image": "/assets/photography/sky/02.webp",
-    "alt": "教学楼上方的蓝天和日落余晖",
-    "width": 612,
-    "height": 459,
-    "sourceNumber": 31,
-    "row": 11
-  },
-  {
-    "album": "sky",
-    "group": "",
-    "title": "天空专辑 · 03",
     "image": "/assets/photography/sky/03.webp",
     "alt": "楼宇剪影上空的橙红色晚霞",
     "width": 1080,
     "height": 810,
     "sourceNumber": 28,
-    "row": 12
+    "chapter": "天光之间",
+    "chapterId": "sky-light",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/sky/previews/03-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 7034
+      },
+      {
+        "src": "/assets/photography/sky/previews/03-768.webp",
+        "width": 768,
+        "height": 576,
+        "bytes": 12792
+      }
+    ],
+    "thumbnail": "/assets/photography/sky/previews/03-480.webp"
+  },
+  {
+    "album": "sky",
+    "group": "",
+    "title": "天空专辑 · 02",
+    "image": "/assets/photography/sky/01.webp",
+    "alt": "树梢上方的蓝天与浅金色云霞",
+    "width": 706,
+    "height": 529,
+    "sourceNumber": 27,
+    "chapter": "天光之间",
+    "chapterId": "sky-light",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/sky/previews/01-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18496
+      },
+      {
+        "src": "/assets/photography/sky/previews/01-706.webp",
+        "width": 706,
+        "height": 529,
+        "bytes": 40580
+      }
+    ],
+    "thumbnail": "/assets/photography/sky/previews/01-480.webp"
+  },
+  {
+    "album": "sky",
+    "group": "",
+    "title": "天空专辑 · 03",
+    "image": "/assets/photography/sky/02.webp",
+    "alt": "教学楼上方的蓝天和日落余晖",
+    "width": 612,
+    "height": 459,
+    "sourceNumber": 31,
+    "chapter": "天光之间",
+    "chapterId": "sky-light",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/sky/previews/02-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 12360
+      },
+      {
+        "src": "/assets/photography/sky/previews/02-612.webp",
+        "width": 612,
+        "height": 459,
+        "bytes": 18774
+      }
+    ],
+    "thumbnail": "/assets/photography/sky/previews/02-480.webp"
   },
   {
     "album": "sky",
@@ -316,7 +768,24 @@
     "width": 648,
     "height": 486,
     "sourceNumber": 29,
-    "row": 12
+    "chapter": "天光之间",
+    "chapterId": "sky-light",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/sky/previews/04-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 7064
+      },
+      {
+        "src": "/assets/photography/sky/previews/04-648.webp",
+        "width": 648,
+        "height": 486,
+        "bytes": 11918
+      }
+    ],
+    "thumbnail": "/assets/photography/sky/previews/04-480.webp"
   },
   {
     "album": "sky",
@@ -327,7 +796,24 @@
     "width": 810,
     "height": 1080,
     "sourceNumber": 30,
-    "row": 12
+    "chapter": "天光之间",
+    "chapterId": "sky-light",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/sky/previews/05-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 20714
+      },
+      {
+        "src": "/assets/photography/sky/previews/05-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 35498
+      }
+    ],
+    "thumbnail": "/assets/photography/sky/previews/05-480.webp"
   },
   {
     "album": "flowers",
@@ -338,7 +824,24 @@
     "width": 695,
     "height": 415,
     "sourceNumber": 33,
-    "row": 13
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/01-480.webp",
+        "width": 480,
+        "height": 287,
+        "bytes": 24322
+      },
+      {
+        "src": "/assets/photography/flowers/previews/01-695.webp",
+        "width": 695,
+        "height": 415,
+        "bytes": 44112
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/01-480.webp"
   },
   {
     "album": "flowers",
@@ -349,7 +852,24 @@
     "width": 530,
     "height": 774,
     "sourceNumber": 32,
-    "row": 13
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/02-480.webp",
+        "width": 480,
+        "height": 701,
+        "bytes": 94110
+      },
+      {
+        "src": "/assets/photography/flowers/previews/02-530.webp",
+        "width": 530,
+        "height": 774,
+        "bytes": 125988
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/02-480.webp"
   },
   {
     "album": "flowers",
@@ -360,7 +880,24 @@
     "width": 589,
     "height": 377,
     "sourceNumber": 37,
-    "row": 14
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/03-480.webp",
+        "width": 480,
+        "height": 307,
+        "bytes": 10362
+      },
+      {
+        "src": "/assets/photography/flowers/previews/03-589.webp",
+        "width": 589,
+        "height": 377,
+        "bytes": 14056
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/03-480.webp"
   },
   {
     "album": "flowers",
@@ -371,7 +908,24 @@
     "width": 492,
     "height": 369,
     "sourceNumber": 34,
-    "row": 14
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/04-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 14570
+      },
+      {
+        "src": "/assets/photography/flowers/previews/04-492.webp",
+        "width": 492,
+        "height": 369,
+        "bytes": 15522
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/04-480.webp"
   },
   {
     "album": "flowers",
@@ -382,7 +936,24 @@
     "width": 490,
     "height": 367,
     "sourceNumber": 35,
-    "row": 14
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 4,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/05-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 19382
+      },
+      {
+        "src": "/assets/photography/flowers/previews/05-490.webp",
+        "width": 490,
+        "height": 367,
+        "bytes": 21412
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/05-480.webp"
   },
   {
     "album": "flowers",
@@ -393,7 +964,24 @@
     "width": 481,
     "height": 641,
     "sourceNumber": 36,
-    "row": 15
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 4,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/06-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 32590
+      },
+      {
+        "src": "/assets/photography/flowers/previews/06-481.webp",
+        "width": 481,
+        "height": 641,
+        "bytes": 34614
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/06-480.webp"
   },
   {
     "album": "flowers",
@@ -404,7 +992,24 @@
     "width": 1276,
     "height": 810,
     "sourceNumber": 38,
-    "row": 15
+    "chapter": "花与四时",
+    "chapterId": "flowers-seasons",
+    "spread": 5,
+    "previews": [
+      {
+        "src": "/assets/photography/flowers/previews/07-480.webp",
+        "width": 480,
+        "height": 305,
+        "bytes": 19900
+      },
+      {
+        "src": "/assets/photography/flowers/previews/07-768.webp",
+        "width": 768,
+        "height": 488,
+        "bytes": 35716
+      }
+    ],
+    "thumbnail": "/assets/photography/flowers/previews/07-480.webp"
   },
   {
     "album": "wuhan",
@@ -415,7 +1020,24 @@
     "width": 644,
     "height": 672,
     "sourceNumber": 39,
-    "row": 16
+    "chapter": "夜色与灯火",
+    "chapterId": "wuhan-night",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/wuhan/previews/01-480.webp",
+        "width": 480,
+        "height": 501,
+        "bytes": 35048
+      },
+      {
+        "src": "/assets/photography/wuhan/previews/01-644.webp",
+        "width": 644,
+        "height": 672,
+        "bytes": 55154
+      }
+    ],
+    "thumbnail": "/assets/photography/wuhan/previews/01-480.webp"
   },
   {
     "album": "wuhan",
@@ -426,7 +1048,24 @@
     "width": 554,
     "height": 738,
     "sourceNumber": 40,
-    "row": 16
+    "chapter": "夜色与灯火",
+    "chapterId": "wuhan-night",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/wuhan/previews/02-480.webp",
+        "width": 480,
+        "height": 639,
+        "bytes": 17282
+      },
+      {
+        "src": "/assets/photography/wuhan/previews/02-554.webp",
+        "width": 554,
+        "height": 738,
+        "bytes": 21488
+      }
+    ],
+    "thumbnail": "/assets/photography/wuhan/previews/02-480.webp"
   },
   {
     "album": "wuhan",
@@ -437,7 +1076,18 @@
     "width": 591,
     "height": 1674,
     "sourceNumber": 41,
-    "row": 16
+    "chapter": "夜色与灯火",
+    "chapterId": "wuhan-night",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/wuhan/previews/03-407.webp",
+        "width": 407,
+        "height": 1152,
+        "bytes": 73288
+      }
+    ],
+    "thumbnail": "/assets/photography/wuhan/previews/03-407.webp"
   },
   {
     "album": "wuhan",
@@ -448,7 +1098,18 @@
     "width": 501,
     "height": 1504,
     "sourceNumber": 42,
-    "row": 17
+    "chapter": "夜色与灯火",
+    "chapterId": "wuhan-night",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/wuhan/previews/04-384.webp",
+        "width": 384,
+        "height": 1152,
+        "bytes": 74230
+      }
+    ],
+    "thumbnail": "/assets/photography/wuhan/previews/04-384.webp"
   },
   {
     "album": "wuhan",
@@ -459,7 +1120,24 @@
     "width": 585,
     "height": 780,
     "sourceNumber": 43,
-    "row": 17
+    "chapter": "林间与水边",
+    "chapterId": "wuhan-green",
+    "spread": 4,
+    "previews": [
+      {
+        "src": "/assets/photography/wuhan/previews/05-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 67596
+      },
+      {
+        "src": "/assets/photography/wuhan/previews/05-585.webp",
+        "width": 585,
+        "height": 780,
+        "bytes": 107414
+      }
+    ],
+    "thumbnail": "/assets/photography/wuhan/previews/05-480.webp"
   },
   {
     "album": "wuhan",
@@ -470,51 +1148,130 @@
     "width": 539,
     "height": 862,
     "sourceNumber": 44,
-    "row": 17
+    "chapter": "林间与水边",
+    "chapterId": "wuhan-green",
+    "spread": 4,
+    "previews": [
+      {
+        "src": "/assets/photography/wuhan/previews/06-480.webp",
+        "width": 480,
+        "height": 768,
+        "bytes": 84834
+      },
+      {
+        "src": "/assets/photography/wuhan/previews/06-539.webp",
+        "width": 539,
+        "height": 862,
+        "bytes": 123494
+      }
+    ],
+    "thumbnail": "/assets/photography/wuhan/previews/06-480.webp"
   },
   {
     "album": "jinan",
     "group": "",
     "title": "济南 · 01",
-    "image": "/assets/photography/jinan/01.webp",
-    "alt": "柳枝和小舟映在碧色水面",
-    "width": 487,
-    "height": 649,
-    "sourceNumber": 45,
-    "row": 18
-  },
-  {
-    "album": "jinan",
-    "group": "",
-    "title": "济南 · 02",
-    "image": "/assets/photography/jinan/02.webp",
-    "alt": "柳枝与银色光点交织的水面",
-    "width": 479,
-    "height": 639,
-    "sourceNumber": 47,
-    "row": 18
-  },
-  {
-    "album": "jinan",
-    "group": "",
-    "title": "济南 · 03",
-    "image": "/assets/photography/jinan/03.webp",
-    "alt": "水面倒映着绿树与天空",
-    "width": 493,
-    "height": 657,
-    "sourceNumber": 46,
-    "row": 19
-  },
-  {
-    "album": "jinan",
-    "group": "",
-    "title": "济南 · 04",
     "image": "/assets/photography/jinan/04.webp",
     "alt": "亭园小桥、石景与流水",
     "width": 634,
     "height": 845,
     "sourceNumber": 49,
-    "row": 19
+    "chapter": "园林与水光",
+    "chapterId": "jinan-water",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/jinan/previews/04-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 76160
+      },
+      {
+        "src": "/assets/photography/jinan/previews/04-634.webp",
+        "width": 634,
+        "height": 845,
+        "bytes": 140524
+      }
+    ],
+    "thumbnail": "/assets/photography/jinan/previews/04-480.webp"
+  },
+  {
+    "album": "jinan",
+    "group": "",
+    "title": "济南 · 02",
+    "image": "/assets/photography/jinan/01.webp",
+    "alt": "柳枝和小舟映在碧色水面",
+    "width": 487,
+    "height": 649,
+    "sourceNumber": 45,
+    "chapter": "园林与水光",
+    "chapterId": "jinan-water",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/jinan/previews/01-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 107218
+      },
+      {
+        "src": "/assets/photography/jinan/previews/01-487.webp",
+        "width": 487,
+        "height": 649,
+        "bytes": 122408
+      }
+    ],
+    "thumbnail": "/assets/photography/jinan/previews/01-480.webp"
+  },
+  {
+    "album": "jinan",
+    "group": "",
+    "title": "济南 · 03",
+    "image": "/assets/photography/jinan/02.webp",
+    "alt": "柳枝与银色光点交织的水面",
+    "width": 479,
+    "height": 639,
+    "sourceNumber": 47,
+    "chapter": "园林与水光",
+    "chapterId": "jinan-water",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/jinan/previews/02-479.webp",
+        "width": 479,
+        "height": 639,
+        "bytes": 54434
+      }
+    ],
+    "thumbnail": "/assets/photography/jinan/previews/02-479.webp"
+  },
+  {
+    "album": "jinan",
+    "group": "",
+    "title": "济南 · 04",
+    "image": "/assets/photography/jinan/03.webp",
+    "alt": "水面倒映着绿树与天空",
+    "width": 493,
+    "height": 657,
+    "sourceNumber": 46,
+    "chapter": "园林与水光",
+    "chapterId": "jinan-water",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/jinan/previews/03-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 66982
+      },
+      {
+        "src": "/assets/photography/jinan/previews/03-493.webp",
+        "width": 493,
+        "height": 657,
+        "bytes": 78488
+      }
+    ],
+    "thumbnail": "/assets/photography/jinan/previews/03-480.webp"
   },
   {
     "album": "jinan",
@@ -525,7 +1282,24 @@
     "width": 496,
     "height": 1116,
     "sourceNumber": 48,
-    "row": 19
+    "chapter": "园林与水光",
+    "chapterId": "jinan-water",
+    "spread": 3,
+    "previews": [
+      {
+        "src": "/assets/photography/jinan/previews/05-480.webp",
+        "width": 480,
+        "height": 1080,
+        "bytes": 109684
+      },
+      {
+        "src": "/assets/photography/jinan/previews/05-496.webp",
+        "width": 496,
+        "height": 1116,
+        "bytes": 123584
+      }
+    ],
+    "thumbnail": "/assets/photography/jinan/previews/05-480.webp"
   },
   {
     "album": "qingdao",
@@ -536,7 +1310,24 @@
     "width": 649,
     "height": 487,
     "sourceNumber": 50,
-    "row": 20
+    "chapter": "风景之间",
+    "chapterId": "qingdao-landscape",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/qingdao/previews/01-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 38868
+      },
+      {
+        "src": "/assets/photography/qingdao/previews/01-649.webp",
+        "width": 649,
+        "height": 487,
+        "bytes": 74804
+      }
+    ],
+    "thumbnail": "/assets/photography/qingdao/previews/01-480.webp"
   },
   {
     "album": "qingdao",
@@ -547,7 +1338,24 @@
     "width": 613,
     "height": 460,
     "sourceNumber": 51,
-    "row": 20
+    "chapter": "风景之间",
+    "chapterId": "qingdao-landscape",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/qingdao/previews/02-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 43838
+      },
+      {
+        "src": "/assets/photography/qingdao/previews/02-613.webp",
+        "width": 613,
+        "height": 460,
+        "bytes": 72646
+      }
+    ],
+    "thumbnail": "/assets/photography/qingdao/previews/02-480.webp"
   },
   {
     "album": "datong",
@@ -558,7 +1366,24 @@
     "width": 683,
     "height": 513,
     "sourceNumber": 52,
-    "row": 21
+    "chapter": "山间与冬日",
+    "chapterId": "datong-landscape",
+    "spread": 1,
+    "previews": [
+      {
+        "src": "/assets/photography/datong/previews/01-480.webp",
+        "width": 480,
+        "height": 361,
+        "bytes": 67654
+      },
+      {
+        "src": "/assets/photography/datong/previews/01-683.webp",
+        "width": 683,
+        "height": 513,
+        "bytes": 149968
+      }
+    ],
+    "thumbnail": "/assets/photography/datong/previews/01-480.webp"
   },
   {
     "album": "datong",
@@ -569,7 +1394,24 @@
     "width": 1080,
     "height": 1440,
     "sourceNumber": 54,
-    "row": 21
+    "chapter": "山间与冬日",
+    "chapterId": "datong-landscape",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/datong/previews/02-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 33196
+      },
+      {
+        "src": "/assets/photography/datong/previews/02-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 70884
+      }
+    ],
+    "thumbnail": "/assets/photography/datong/previews/02-480.webp"
   },
   {
     "album": "datong",
@@ -580,6 +1422,23 @@
     "width": 1080,
     "height": 1440,
     "sourceNumber": 53,
-    "row": 21
+    "chapter": "山间与冬日",
+    "chapterId": "datong-landscape",
+    "spread": 2,
+    "previews": [
+      {
+        "src": "/assets/photography/datong/previews/03-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 77374
+      },
+      {
+        "src": "/assets/photography/datong/previews/03-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 147482
+      }
+    ],
+    "thumbnail": "/assets/photography/datong/previews/03-480.webp"
   }
 ]

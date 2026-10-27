@@ -5,6 +5,21 @@
     "alt": "“语生书韵”阅读沙龙海报，主题为红楼梦与人生，以花枝、仙鹤和传统纹样构图",
     "description": "“语生书韵”阅读沙龙 · 活动海报",
     "width": 1268,
-    "height": 1649
+    "height": 1649,
+    "previews": [
+      {
+        "src": "/assets/design/previews/reading-salon-480.webp",
+        "width": 480,
+        "height": 624,
+        "bytes": 39288
+      },
+      {
+        "src": "/assets/design/previews/reading-salon-768.webp",
+        "width": 768,
+        "height": 999,
+        "bytes": 74612
+      }
+    ],
+    "thumbnail": "/assets/design/previews/reading-salon-480.webp"
   }
 ]
