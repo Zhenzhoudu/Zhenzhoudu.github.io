@@ -37,7 +37,7 @@ function resizeFlow() {
 
 function drawFlow(now) {
   context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-  const opacity = Math.max(0, 1 - (now - lastMove) / 140);
+  const opacity = Math.max(0, 1 - (now - lastMove) / 200);
   if (!opacity || !tail || !flowPreference.matches || document.hidden) {
     frame = 0;
     tail = null;
@@ -46,28 +46,28 @@ function drawFlow(now) {
   const dx = pointer.x - tail.x;
   const dy = pointer.y - tail.y;
   const distance = Math.hypot(dx, dy);
-  if (distance > 44) {
-    tail.x = pointer.x - dx / distance * 44;
-    tail.y = pointer.y - dy / distance * 44;
+  if (distance > 52) {
+    tail.x = pointer.x - dx / distance * 52;
+    tail.y = pointer.y - dy / distance * 52;
   }
   if (distance > 2) {
     const normal = { x: -dy / distance, y: dx / distance };
     const light = context.createLinearGradient(tail.x, tail.y, pointer.x, pointer.y);
     light.addColorStop(0, 'transparent');
-    light.addColorStop(.6, `rgba(150, 191, 179, ${opacity * .08})`);
-    light.addColorStop(1, `rgba(195, 215, 201, ${opacity * .18})`);
+    light.addColorStop(.6, `rgba(168, 205, 192, ${opacity * .24})`);
+    light.addColorStop(1, `rgba(218, 237, 224, ${opacity * .48})`);
     for (const offset of [0, 2.5]) {
       context.beginPath();
       context.moveTo(tail.x + normal.x * offset, tail.y + normal.y * offset);
       context.quadraticCurveTo((tail.x + pointer.x) / 2 + normal.x * (3 + offset),
         (tail.y + pointer.y) / 2 + normal.y * (3 + offset), pointer.x, pointer.y);
       context.strokeStyle = light;
-      context.lineWidth = offset ? .35 : .65;
+      context.lineWidth = offset ? .55 : 1.1;
       context.stroke();
     }
   }
-  tail.x += (pointer.x - tail.x) * .4;
-  tail.y += (pointer.y - tail.y) * .4;
+  tail.x += (pointer.x - tail.x) * .28;
+  tail.y += (pointer.y - tail.y) * .28;
   frame = requestAnimationFrame(drawFlow);
 }
 
@@ -84,7 +84,7 @@ function updateFlowPreference() {
 
 window.addEventListener('pointermove', (event) => {
   if (!flowPreference.matches || event.pointerType === 'touch') return;
-  if (event.target.closest('p, h1, h2, h3, li, blockquote, figcaption, .post, .gallery-item, a, button, input, textarea, select, [contenteditable]')) {
+  if (event.buttons || event.target.closest('input, textarea, select, [contenteditable]')) {
     lastMove = 0;
     tail = null;
     return;
